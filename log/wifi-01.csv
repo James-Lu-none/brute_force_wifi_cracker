@@ -1,0 +1,6 @@
+
+BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
+88:C3:97:04:EC:11, 2023-12-04 16:55:36, 2023-12-04 16:55:46,  6, 130, WPA2, CCMP TKIP, PSK, -16,       90,        0,   0.  0.  0.  0,  11, Xiaomi_EC10, 
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+
